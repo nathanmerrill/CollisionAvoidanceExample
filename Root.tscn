@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Root.gd" type="Script" id=1]
+
+[node name="CollisionAvoidance2D" type="CollisionAvoidance2D"]
+bounds = Rect2( 0, 0, 500, 500 )
+script = ExtResource( 1 )
+
+[node name="Top" type="Polygon2D" parent="."]
+position = Vector2( -20, 200 )
+scale = Vector2( 0.976293, 1.03074 )
+color = Color( 0.501961, 0, 0, 1 )
+polygon = PoolVector2Array( 20.4857, -194.035, 532.627, -194.035, 532.627, -58.2106, 20.4857, -58.2106 )
+
+[node name="Bottom" type="Polygon2D" parent="."]
+position = Vector2( -20, 710 )
+scale = Vector2( 0.976293, 1.03074 )
+color = Color( 0.501961, 0, 0, 1 )
+polygon = PoolVector2Array( 20.4857, -349.264, 532.627, -349.264, 532.627, -203.737, 20.4856, -203.737 )
